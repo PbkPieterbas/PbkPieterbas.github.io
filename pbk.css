@@ -1,0 +1,255 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+	color: #00BBFF;
+}
+a:hover{
+	text-decoration:underline;
+}
+table {
+    border-spacing: 0;    
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#000;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+/* Main Div CSS
+ * --------------------------------------- */
+
+.superContainer {
+	height: 100%;
+    position: relative;
+}
+
+.containerDiv{
+	width:100%;
+	height:1000px;
+}
+
+.profileImageDiv{
+	width:30px;
+	height:30px;
+	position:absolute;
+	top:5%;
+	right: 6px;
+}
+
+.profileImage{
+	height:100%;
+}
+
+
+.infoDiv {
+    width: 32.2%;
+    height: 100%;
+    background-color: #FFF;
+    float: left;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-end;
+    /* display: inline-block; */
+    /* text-align: right; */
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+.infoTextDiv{
+	margin-top: 60px;
+    
+	/* margin-left: 15%; */
+    
+	/* margin-right: 5%; */
+	/* float: right; */
+	/* text-align: center; */
+	/* max-width: 300px; */
+}
+
+
+.linksDiv{
+	    height: 100%;
+    width: 58.8%;
+    background-color: #FBFBFB;
+    float: left;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-start;
+    /* margin-left: 30px; */
+    padding-left: 3%;
+}
+
+.flex-item {
+    /* background: aqua; */
+    width: 130px;
+    min-height:100px;
+    margin-top: 50px;
+    color: white;
+    font-weight: bold;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+
+ 
+/* Typography
+ * --------------------------------------- */
+ 
+body{
+	 font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+ }
+ 
+ 
+ h1 {
+	font-size: 86px;
+    font-weight: bold;
+	margin-bottom: 12.2px;
+ 
+	letter-spacing: 6px;
+	max-width: 420px;     
+	/* display: inline-block; */
+	text-align: center;
+	/* font-family: MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif; */
+}
+ 
+ h3 {
+	font-size: 13px;
+    font-weight: bold;
+	color:#A9A9AA;
+	margin-bottom: 26px;
+ 
+	letter-spacing: 1px;
+}
+ 
+ h5 {
+	 color:#A9A9AA;
+	 font-size: 14px;
+	 text-align:left;
+	 font-weight: 500;
+	 line-height: 1.5;
+	 letter-spacing: 1px;
+	 max-width: 420px;
+	 display: inline-block;
+}
+ 
+ .flex-item a {
+	display:block;
+	font-size: 14px;
+	color:#444;
+	text-decoration:underline;
+	font-weight: 300;
+	letter-spacing: 0.5px;
+	line-height: 1.5;
+}
+
+
+
+
+/* Media Queries
+ * --------------------------------------- */
+ @media only screen 
+    and (max-device-width: 640px), 
+    only screen and (max-device-width: 667px), 
+    only screen and (max-width: 480px)
+{
+}
+ 
+ 
+@media (max-width: 1010px) {
+	 
+.infoDiv {
+    width: 90%;
+    height: auto;
+    justify-content: center;
+    /* display: inline-block; */
+    /* text-align: right; */
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-bottom: 40px;
+}
+
+.linksDiv {
+    /* height: 0; */
+    width: 100%;
+	height:auto;
+    justify-content: center;
+    /* margin-left: 30px; */
+    padding-left: 0px;
+	padding-bottom: 40px;
+}
+
+.profileImageDiv {
+    position: relative;
+    right: auto;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+h5{
+    text-align: center;
+}
+
+  
+}
+
+@media (max-width: 600px) {
+	 
+.flex-item {
+    /* background: aqua; */
+    width: 30%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+  
+}
+ 
