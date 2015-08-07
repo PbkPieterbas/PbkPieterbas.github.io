@@ -138,6 +138,14 @@ abbr,acronym { border: 0;
     padding-right: 5px;
 }
 
+.verticalLine {
+	width: 1px;
+    height: 70%;
+    margin-left: 38.2%;
+    background-color: #A9A9AA;
+    position: absolute;
+    bottom:0%;
+}
 
 
  
@@ -202,6 +210,12 @@ body{
     only screen and (max-width: 480px)
 {
 }
+
+@media (min-width: 1300px) {
+	.flex-item {
+		margin-right:40px;
+	}
+}
  
  
 @media (max-width: 1010px) {
@@ -236,6 +250,10 @@ body{
 
 h5{
     text-align: center;
+}
+
+.verticalLine{
+	display:none;
 }
 
   
